@@ -9,9 +9,9 @@ requests. Anyone can be a contributor. No permission is needed to open one.
 what approval means here. Maintainers are listed in
 [.github/CODEOWNERS](.github/CODEOWNERS).
 
-**The steward** breaks ties and admits new maintainers. Today this is the
-project founder. The role exists because a methodology standard without a
-tiebreaker stalls on taste.
+**The steward** breaks ties and admits new maintainers. Today this is
+[@spencer-acre](https://github.com/spencer-acre). The role exists because a
+methodology standard without a tiebreaker stalls on taste.
 
 ## How a change is approved
 

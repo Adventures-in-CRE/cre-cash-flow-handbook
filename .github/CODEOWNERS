@@ -1,24 +1,30 @@
-# Maintainers. A pull request needs approval from an owner of the paths it
-# touches, and that owner may not be its author.
+# Maintainers. GitHub requests review from the owners of every path a pull
+# request touches.
 #
-# TODO before publishing: replace the placeholders with real GitHub handles.
+# Steward:     @spencer-acre
+# Maintainers: @alexthewizarrd, @kyle-acre-github
+#
+# CODEOWNERS decides WHO reviews. It cannot express HOW MANY approvals are
+# needed. GOVERNANCE.md asks for one approval on content and two on the
+# governing documents, one of them the steward. Configure that in branch
+# protection on `main`:
+#
+#   - Require a pull request before merging
+#   - Require review from Code Owners
+#   - Require at least 1 approval
+#   - Dismiss stale approvals on new commits
+#   - Require status checks: "Entry schema and graph", "Sign-off"
+#
+# The governing documents below list only the steward, so his review is always
+# requested on them. The second approval is a convention the maintainers hold
+# to, not something GitHub enforces per path.
 
-# Everything, by default.
-*                       @STEWARD-HANDLE
+# Handbook content and everything else.
+*                       @spencer-acre @alexthewizarrd @kyle-acre-github
 
-# The governing documents need two approvals, one of them the steward.
-/FRAMEWORK.md           @STEWARD-HANDLE @MAINTAINER-HANDLE
-/GOVERNANCE.md          @STEWARD-HANDLE @MAINTAINER-HANDLE
-/CODE_OF_CONDUCT.md     @STEWARD-HANDLE @MAINTAINER-HANDLE
-/LICENSE                @STEWARD-HANDLE @MAINTAINER-HANDLE
-/.github/CODEOWNERS     @STEWARD-HANDLE @MAINTAINER-HANDLE
-
-# Handbook content.
-/entries/               @STEWARD-HANDLE @MAINTAINER-HANDLE
-
-# Tooling and CI.
-/tools/                 @STEWARD-HANDLE @MAINTAINER-HANDLE
-/.github/workflows/     @STEWARD-HANDLE @MAINTAINER-HANDLE
-
-# AI contributor skills.
-/.claude/               @STEWARD-HANDLE @MAINTAINER-HANDLE
+# Governing documents. Steward review always requested.
+/FRAMEWORK.md           @spencer-acre
+/GOVERNANCE.md          @spencer-acre
+/CODE_OF_CONDUCT.md     @spencer-acre
+/LICENSE                @spencer-acre
+/.github/CODEOWNERS     @spencer-acre
