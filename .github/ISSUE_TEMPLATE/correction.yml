@@ -1,0 +1,50 @@
+name: Report an error
+description: An entry states something incorrect, ambiguous, or unimplementable.
+labels: ["correction"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry ID
+      placeholder: "1.2.9"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of error
+      options:
+        - The method is wrong
+        - A rule is ambiguous
+        - A rule cannot be implemented as written
+        - The dependency graph is wrong
+        - It duplicates another entry
+        - The worked example does not reproduce
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Quote the text you are challenging.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: >
+        A worked example where the current rule produces the wrong number is
+        the strongest form. A specific citation also works. "That is not how it
+        is done" is not evidence, and practice does vary.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What it should say instead

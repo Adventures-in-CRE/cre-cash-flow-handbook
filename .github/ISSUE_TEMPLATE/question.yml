@@ -1,0 +1,30 @@
+name: Ask a question
+description: Something in the handbook is unclear, or you are unsure where a concept belongs.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A question that turns out to be a gap in the handbook usually becomes
+        an entry or a rule. Ask it here rather than guessing.
+
+  - type: input
+    id: entry
+    attributes:
+      label: Related entry ID, if there is one
+      placeholder: "1.2.9"
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What you are trying to do
+      description: >
+        Underwriting a specific deal type, building an implementation, teaching
+        from it. Context changes the answer.

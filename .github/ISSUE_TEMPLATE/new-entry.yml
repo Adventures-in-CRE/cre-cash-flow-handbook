@@ -1,0 +1,55 @@
+name: Propose a line item
+description: Suggest a line item the handbook should cover, or claim an existing stub.
+labels: ["entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You do not need to open an issue to contribute. If you already know
+        what to write, open a pull request instead. Use this when you want to
+        check the idea first, or to claim a stub so nobody duplicates you.
+
+  - type: input
+    id: name
+    attributes:
+      label: Line item name
+      description: The term of art practitioners use.
+      placeholder: Net Operating Income
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Which section does it belong to?
+      placeholder: "1.2 Operating Cash Flow"
+    validations:
+      required: true
+
+  - type: textarea
+    id: admission
+    attributes:
+      label: Why it is its own row
+      description: >
+        A line item earns an entry only if it would appear as its own row in a
+        model someone actually builds. If it is a nuance or exception, it
+        belongs inside an existing entry as a rule instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: duplicate
+    attributes:
+      label: What you searched for
+      description: >
+        Which names you checked in INDEX.md to confirm this is not already
+        covered. Concepts often carry two or three names.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: claiming
+    attributes:
+      label: Are you writing it?
+      options:
+        - label: I intend to open a pull request for this

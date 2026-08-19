@@ -1,0 +1,24 @@
+# Maintainers. A pull request needs approval from an owner of the paths it
+# touches, and that owner may not be its author.
+#
+# TODO before publishing: replace the placeholders with real GitHub handles.
+
+# Everything, by default.
+*                       @STEWARD-HANDLE
+
+# The governing documents need two approvals, one of them the steward.
+/FRAMEWORK.md           @STEWARD-HANDLE @MAINTAINER-HANDLE
+/GOVERNANCE.md          @STEWARD-HANDLE @MAINTAINER-HANDLE
+/CODE_OF_CONDUCT.md     @STEWARD-HANDLE @MAINTAINER-HANDLE
+/LICENSE                @STEWARD-HANDLE @MAINTAINER-HANDLE
+/.github/CODEOWNERS     @STEWARD-HANDLE @MAINTAINER-HANDLE
+
+# Handbook content.
+/entries/               @STEWARD-HANDLE @MAINTAINER-HANDLE
+
+# Tooling and CI.
+/tools/                 @STEWARD-HANDLE @MAINTAINER-HANDLE
+/.github/workflows/     @STEWARD-HANDLE @MAINTAINER-HANDLE
+
+# AI contributor skills.
+/.claude/               @STEWARD-HANDLE @MAINTAINER-HANDLE
