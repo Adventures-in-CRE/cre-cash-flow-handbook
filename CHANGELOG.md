@@ -17,6 +17,11 @@ Versioned `MAJOR.MINOR.PATCH` per [GOVERNANCE.md](GOVERNANCE.md).
 - AI contributor skills under `.claude/skills/`.
 - Section scaffolding for the three regions, with line items filed as stubs.
 
+### Added
+
+- `DEFINITIONS.md`, defining the vocabulary entries are written in. Opens with
+  the three cash flow levels: property, investment, and partnership.
+
 ### Changed
 
 - Sponsor fees moved from the investment level to the partnership level.
